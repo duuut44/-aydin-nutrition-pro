@@ -1,0 +1,232 @@
+
+:root{
+  --bg:#080D0A;
+  --surface:#121A15;
+  --surface2:#1B251E;
+  --line:#28342C;
+  --text:#F6FAF6;
+  --muted:#8F9892;
+  --green:#63E28D;
+  --greenDark:#2A7A47;
+  --gold:#E8BE63;
+  --danger:#FF6B6B;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",sans-serif;
+}
+
+.container{
+  max-width:680px;
+  margin:auto;
+  padding:56px 16px 96px;
+}
+
+h1{
+  font-size:34px;
+  font-weight:800;
+}
+
+.subtitle{
+  color:var(--muted);
+  margin-top:4px;
+  font-size:14px;
+}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:18px;
+  margin-top:14px;
+}
+
+.hero{
+  background:linear-gradient(145deg,#173B25,#102117);
+  border:1px solid #2F7A4B;
+}
+
+.status{
+  color:var(--green);
+  font-weight:700;
+  letter-spacing:1px;
+  font-size:13px;
+}
+
+.bigTime{
+  font-size:40px;
+  font-weight:900;
+  margin:8px 0;
+}
+
+.foodTitle{
+  font-size:22px;
+  font-weight:800;
+}
+
+.foodInfo{
+  color:var(--muted);
+  margin-top:6px;
+  line-height:1.4;
+}
+
+.kcal{
+  font-size:56px;
+  font-weight:900;
+  text-align:center;
+}
+
+.center{
+  text-align:center;
+}
+
+.progress{
+  height:10px;
+  background:#263229;
+  border-radius:20px;
+  overflow:hidden;
+  margin:18px 0 8px;
+}
+
+.progressFill{
+  height:100%;
+  width:0%;
+  background:var(--green);
+  border-radius:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:14px;
+}
+
+.macro{
+  background:var(--surface2);
+  border-radius:18px;
+  padding:14px;
+  text-align:center;
+}
+
+.macro span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.macro h3{
+  margin-top:6px;
+  font-size:20px;
+}
+
+.title{
+  font-size:19px;
+  font-weight:800;
+  margin-bottom:14px;
+}
+
+.meal{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.meal:last-child{
+  border-bottom:none;
+}
+
+.icon{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+  background:var(--surface2);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+}
+
+.mealTime{
+  color:var(--green);
+  font-size:12px;
+  font-weight:700;
+}
+
+.mealName{
+  font-weight:700;
+  margin-top:3px;
+}
+
+.mealDetail{
+  color:var(--muted);
+  font-size:12px;
+  margin-top:4px;
+}
+
+.button{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:16px;
+  background:var(--green);
+  color:#041009;
+  font-weight:800;
+  font-size:16px;
+}
+
+.buttonSecondary{
+  width:100%;
+  padding:15px;
+  border-radius:16px;
+  background:var(--surface2);
+  border:1px solid var(--line);
+  color:white;
+  font-weight:700;
+}
+
+.bottomNav{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:78px;
+  background:rgba(8,13,10,.96);
+  backdrop-filter:blur(20px);
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:center;
+}
+
+.bottomInner{
+  width:100%;
+  max-width:680px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+
+.navBtn{
+  background:none;
+  border:none;
+  color:var(--muted);
+  font-size:11px;
+}
+
+.navBtn.active{
+  color:var(--green);
+}
+
+.navBtn div{
+  font-size:24px;
+  margin-bottom:3px;
+}
